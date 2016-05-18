@@ -25,14 +25,14 @@ var getPlayerMove = function(move) {
     if(move===undefined||move===null){
         return getInput();
     } else {
-    return move||getInput();
+    return move;
     }
 
 var getComputerMove = function(move) {
     if(move===undefined||move===null){
         return randomPlay()
     } else {
-    return move||randomPlay();
+    return move;
     }
 
 function getWinner(playerMove,computerMove) {
